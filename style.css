@@ -1,0 +1,116 @@
+:root {
+
+    /* Colors */
+    --green: hsl(75, 94%, 57%);
+
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+
+    /* Fonts */
+
+    --normal-font-size: 14px;
+    
+    --normal-font-weight: 400;
+    --bold-font-weight: 600;
+    --extre-bold-font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    
+    /* border: solid red 1px;  DEBUG*/
+}
+
+body {
+    background-color: var(--off-black);
+    color: var(--white);   
+}
+
+/* Style */
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--dark-grey);
+        border-radius: 15px;
+        width: 500px;
+        height: 800px;
+    }
+
+        .profile div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile div img {
+            border-radius: 50%;
+            width: 128px;
+            margin-bottom: 30px;
+        }
+
+        .profile h1 {
+            font-size: 32px;
+            font-weight: var(--bold-font-weight);
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            text-align: center;
+            color: var(--green);
+            font-weight: var(--bold-font-weight);
+            font-size:  20px;
+            margin-bottom: 30px;
+        }
+
+            .description {
+                font-size: 20px;
+            }
+
+/* Social */
+
+.social {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+    .social a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: var(--grey);
+        text-align: center;
+        height: 60px;
+        width: 100%;
+        margin: 8px;
+        border-radius: 10px;
+        color: var(--white);
+        text-decoration: none;
+        font-weight: var(--extre-bold-font-weight);
+        transition: .3s all ease-in-out;
+    }
+
+        .social a:hover {
+            background-color: var(--green);
+            color: var(--grey);
+        }
